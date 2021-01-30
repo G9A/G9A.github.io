@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hexo全局配置_config.yml详解</title>
+    <url>/2021/01/30/Hexo%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6_config.yml%E8%AF%A6%E8%A7%A3/</url>
+    <content><![CDATA[<h2 id="site"><a href="#site" class="headerlink" title="site"></a>site</h2><p>这是站点的一些基础设置，对站点的SEO会是一个优化：</p>
+<ul>
+<li><p> <strong>title</strong>： 站点名字，也就是HTML的title,会显示在浏览器标签上</p>
+</li>
+<li><p><strong>subtitle</strong>：站点副标题，同时会显示在首页上</p>
+</li>
+<li><p><strong>description</strong> ：站点的描述，建议多放一些利于搜索的关键语句</p>
+</li>
+<li><p><strong>author</strong>：作者</p>
+</li>
+<li><p><strong>language</strong>：默认言语</p>
+</li>
+<li><p><strong>timezone</strong>：站点时区，默认是电脑时间</p>
+</li>
+</ul>
+<hr>
+<h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><ul>
+<li><p><strong>url</strong>：站点网址</p>
+</li>
+<li><p><strong>roo</strong>：t站点根目录</p>
+</li>
+<li><p><strong>permalink</strong>：文章的网址链接，默认是:year/:month/:day/:title/,前面的时间就是你文章发表的时间，title是文章标题，例如：<a href="http://g9a.com/2020/01/30/XXX/">http://g9a.com/2020/01/30/XXX/</a></p>
+</li>
+<li><p><strong>permalink_default</strong>：如果网址是次级目录，帮你如：<a href="http://xxx.com/xxx,%E9%82%A3%E4%B9%88%E5%B0%B1%E8%A6%81%E8%AE%BE%E7%BD%AEURL%E4%B8%BAhttp://xxx.coml/xxx,%E5%B9%B6%E4%B8%94root%E8%A6%81%E8%AE%BE%E7%BD%AE%E4%B8%BA/xxx/">http://xxx.com/xxx,那么就要设置URL为http://xxx.coml/xxx,并且root要设置为/xxx/</a></p>
+</li>
+</ul>
+<hr>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><p><strong>source_dir</strong>：source目录，默认值为source</p>
+</li>
+<li><p><strong>public_dir</strong>：public目录，静态网站生成的地方，默认值为public</p>
+</li>
+<li><p><strong>tag_dir</strong>：tag（标签）目录</p>
+</li>
+<li><p><strong>archive_dir</strong>：Archive目录</p>
+</li>
+<li><p><strong>category_dir</strong>：分类目录</p>
+</li>
+<li><p><strong>code_dir</strong>代码目录</p>
+</li>
+<li><p><strong>i18n_dir</strong>：多语言i18你目录</p>
+</li>
+<li><p><strong>skip_render</strong>：不想被渲染的路径</p>
+</li>
+</ul>
+<hr>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><ul>
+<li><p><strong>new_post_name</strong>：新建文章默认文件名，默认值为：title.md,比如你执行命令hexo new hello,就会默认在_post目录下创建一个hello.dm的文件</p>
+</li>
+<li><p><strong>default_layout</strong>：默认布局</p>
+</li>
+<li><p><strong>external_link</strong>：在新标签中打开一个外部链接，默认为true</p>
+</li>
+<li><p><strong>filename_case</strong>：转换文件名，1代表小写；2代表大写；默认为0，意思赏就是创建文章的时候，是否自动帮你转换文件名，默认就行，意义不大。</p>
+</li>
+<li><p><strong>render_drafts</strong>：是否渲染_drafts目录下的文章，默认为false</p>
+</li>
+<li><p><strong>post_asset_folder</strong>：是否启用Asset Folder,默认为false</p>
+</li>
+<li><p><strong>future</strong>：是否显示未来日期文章，默认为true</p>
+</li>
+<li><p><strong>highlight</strong>：代码块设置</p>
+</li>
+</ul>
+<p>这一部分也可以基本部件，默认值就行。</p>
+<hr>
+<h2 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h2><ul>
+<li><strong>default_category</strong>：默认分类，默认为无分类，当然你可以设置一个默认分类</li>
+<li><strong>category_map</strong>：分类，不明白作用</li>
+<li><strong>tag_map</strong>：标签，不明白作用</li>
+</ul>
+<hr>
+<h2 id="日期和时间"><a href="#日期和时间" class="headerlink" title="日期和时间"></a>日期和时间</h2><p>Hexo使用的Moment.js来处理时间的</p>
+<ul>
+<li><p><strong>data_format</strong>：日期格式，默认为MMM D YYYY,其他模板格式可以查看Moment.js</p>
+</li>
+<li><p><strong>time_format</strong>：时间格式，默认为H：mm:ss</p>
+</li>
+</ul>
+<hr>
+<h2 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h2><ul>
+<li><p><strong>per_page</strong>：一页显示多少篇文章，0为不分页，默认值为10</p>
+</li>
+<li><p><strong>pagination_dir</strong>：分页目录，默认值为page</p>
+</li>
+</ul>
+<hr>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><ul>
+<li><p><strong>theme</strong>：主题配置，此处填上主题名就OK了，当然在themes目录下一定要有你配置的主题文件夹</p>
+</li>
+<li><p><strong>deploy</strong>：部署配置，将本地public目录也就是网站部署到服务器上的配置</p>
+</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo博客搭建</title>
+    <url>/2021/01/28/hexo%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="1-安装node-js和npm"><a href="#1-安装node-js和npm" class="headerlink" title="1.安装node.js和npm"></a>1.安装node.js和npm</h2><p>前往nodejs.cn/download或nodejs.org/download下载</p>
+<p><img src="/images/1.png"></p>
+<p>这里我选择windows.msi 64位文件下载</p>
+<p>进行安装</p>
+<p><img src="/images/2.png"></p>
+<p>更改路径</p>
+<p><img src="/images/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png"></p>
+<p>我勾选了自动安装需要的tools</p>
+<p>安装完成后输入node -v查看打印输出</p>
+<p>输入npm -v打印输出</p>
+<p>安装时会将引导文件添加进PATH 环境变量</p>
+<p><img src="/images/3.png"></p>
+<hr>
+<h1 id="2-安装相关环境"><a href="#2-安装相关环境" class="headerlink" title="2.安装相关环境"></a>2.安装相关环境</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install express -g</span><br><span class="line">npm install jade -g</span><br><span class="line">npm install mysql -g</span><br></pre></td></tr></table></figure>
+
+
+<p>这里会出现安装缓慢的情况需要使用vpn或者别的方法，我使用的是vpn</p>
+<p>默认情况下上述组件都是安装在自定义的文件目录下D:\nodejs\node_moudules文件夹下，这也是nodejs相关组件的自动查找路径.</p>
+<hr>
+<h1 id="3-安装CoffeeScript"><a href="#3-安装CoffeeScript" class="headerlink" title="3.安装CoffeeScript"></a>3.安装CoffeeScript</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install coffee-script -g</span><br></pre></td></tr></table></figure>
+
+
+<p>确认是否安装成功，使用coffee -v 出现版本号表示安装成功</p>
+<p><img src="/images/4.png" alt="4"></p>
+<hr>
+<h1 id="4-调试node-js"><a href="#4-调试node-js" class="headerlink" title="4.调试node.js"></a>4.调试node.js</h1><h2 id="更改npm配置的默认路径"><a href="#更改npm配置的默认路径" class="headerlink" title="更改npm配置的默认路径"></a>更改npm配置的默认路径</h2><p>如果不修改npm下载模块的默认位置，默认的安装路径是：</p>
+<p>C:\Users\Administrator\AppData\Roaming下的npm和npm-cache</p>
+<p>所有的模块都安装在这里</p>
+<p>找到node安装路径，依次进入node_modules &gt; npm</p>
+<p>如：D:\nodejs\node_modules\npm，在文件夹中找到npmrc文件，使用编辑器打开</p>
+<p><img src="/images/5.png"></p>
+<p>prefix配置npm的全局模块的存放路径，cache是缓存路径</p>
+<p>模块都安装在prefix路径，cache是缓存的一些模块的版本、包的信息。</p>
+<p>更改为</p>
+<p><img src="/images/6.png"></p>
+<hr>
+<h1 id="5-下载安装git"><a href="#5-下载安装git" class="headerlink" title="5.下载安装git"></a>5.下载安装git</h1><p><a href="https://github.com/git-for-windows/git/releases/tag/v2.8.3.windows.1">https://github.com/git-for-windows/git/releases/tag/v2.8.3.windows.1</a></p>
+<hr>
+<h1 id="6-安装hexo"><a href="#6-安装hexo" class="headerlink" title="6.安装hexo"></a>6.安装hexo</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>安装hexo会出现两个warn，直接掠过就行</p>
+<p><img src="/images/7.png"></p>
+<p>测试命令hexo</p>
+<p><img src="/images/8.png"></p>
+<p>估计是找不到这个命令，如果没有修改过默认地址的应该是在appdata目录，前面我已经设置成了D:\nodejs\node_global，切换到目录下，测试命令</p>
+<p><img src="/images/9.png"></p>
+<p>可以使用，那就把这个路径胶乳到path环境变量中，环境变量配置的过程中可能会出现无法运行的情况，我是将路径改为D:\nodejs\node_global\node_modules.bin这样，或者尝试使用管理员运行cmd，我是先改了path，试了不行，管理员运行了就可以用了，感性的可以尝试一下。</p>
+<hr>
+<h1 id="7-hexo使用"><a href="#7-hexo使用" class="headerlink" title="7.hexo使用"></a>7.hexo使用</h1><p>我是在D盘下md blog 创建了一个blog文件夹，然后切换到目录下使用hexo init 就可以创建i一个本地文件。</p>
+<p>hexo new “XXX”或者 hexo n “xxx”创建一个md文件。</p>
+<p>D:\blog\source_posts 这里存放着文章，可以在这里进行编辑。</p>
+<p>使用typora或者其他编辑工具编辑md文件就可以了。</p>
+<p>使用hexo generate上传更新文件</p>
+<p>使用hexo server运行服务</p>
+<p>使用hexo deploy进行部署</p>
+<p>都可以使用简写，比如hexo s启动服务。</p>
+<hr>
+<h1 id="8-hexo如何上传图片"><a href="#8-hexo如何上传图片" class="headerlink" title="8.hexo如何上传图片"></a>8.hexo如何上传图片</h1><p>1.调整程序配置文件_config.yml里的post_asset_folder:这个选项设置为True</p>
+<p>2.在source下创建/images文件夹，先把图片xx.jpg/png复制到这个文件夹</p>
+<p>3.在xxx.md中想引入图片是，只需要在xxx.md中按照：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![想输入的名字，可以不输入]（&#x2F;images&#x2F;xx.jpg）</span><br></pre></td></tr></table></figure>
+<p>然后hexo g 一下就可以看到图片正常上传了。</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+  </entry>
+</search>
