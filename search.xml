@@ -172,10 +172,23 @@
       </categories>
   </entry>
   <entry>
+    <title>博客主题更改</title>
+    <url>/2021/01/31/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9/</url>
+    <content><![CDATA[<h1 id="博客主题安装"><a href="#博客主题安装" class="headerlink" title="博客主题安装"></a>博客主题安装</h1><p>博客主题安装可以参考我安装的主题，具体安装步骤均在链接中，作者有写</p>
+<p><a href="https://github.com/Fechin/hexo-theme-diaspora">https://github.com/Fechin/hexo-theme-diaspora</a></p>
+<hr>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>链接</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>渗透测试工具环境准备</title>
     <url>/2021/01/31/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/</url>
     <content><![CDATA[<h1 id="渗透测试工具环境准备"><a href="#渗透测试工具环境准备" class="headerlink" title="渗透测试工具环境准备"></a>渗透测试工具环境准备</h1><hr>
-<p>[TOC]</p>
 <hr>
 <h2 id="1-VMware安装"><a href="#1-VMware安装" class="headerlink" title="1.VMware安装"></a>1.VMware安装</h2><p>VMware官网：<a href="https://www.vmware.com/">https://www.vmware.com/</a></p>
 <p>VMware Workstation pro 16 许可证密钥：</p>
@@ -349,7 +362,7 @@
 <p>update-rc.d ssh enable</p>
 <p>终端连接</p>
 <p>ifconfig</p>
-<p>ssh <a href="mailto:&#x72;&#111;&#111;&#116;&#64;&#49;&#x39;&#x32;&#x2e;&#x31;&#x36;&#56;&#46;&#x31;&#50;&#51;&#46;&#x31;&#51;&#54;">&#x72;&#111;&#111;&#116;&#64;&#49;&#x39;&#x32;&#x2e;&#x31;&#x36;&#56;&#46;&#x31;&#50;&#51;&#46;&#x31;&#51;&#54;</a></p>
+<p>ssh <a href="mailto:&#x72;&#111;&#111;&#x74;&#64;&#49;&#57;&#x32;&#x2e;&#x31;&#54;&#x38;&#46;&#49;&#50;&#x33;&#x2e;&#49;&#51;&#54;">&#x72;&#111;&#111;&#x74;&#64;&#49;&#57;&#x32;&#x2e;&#x31;&#54;&#x38;&#46;&#49;&#50;&#x33;&#x2e;&#49;&#51;&#54;</a></p>
 <p><img src="/images/shentouhuanjing6.png"></p>
 <hr>
 <h2 id="14-Kali-Tools"><a href="#14-Kali-Tools" class="headerlink" title="14.Kali Tools"></a>14.Kali Tools</h2><p>\1. 信息收集</p>
@@ -441,22 +454,8 @@
       </tags>
   </entry>
   <entry>
-    <title>博客主题更改</title>
-    <url>/2021/01/31/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9/</url>
-    <content><![CDATA[<h1 id="博客主题安装"><a href="#博客主题安装" class="headerlink" title="博客主题安装"></a>博客主题安装</h1><p>博客主题安装可以参考我安装的主题，具体安装步骤均在链接中，作者有写</p>
-<p><a href="https://github.com/Fechin/hexo-theme-diaspora">https://github.com/Fechin/hexo-theme-diaspora</a></p>
-<hr>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>链接</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>qqxxsj</title>
-    <url>/2021/02/01/qqxxsj/</url>
+    <title>前期信息收集</title>
+    <url>/2021/02/01/%E5%89%8D%E6%9C%9F%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</url>
     <content><![CDATA[<h1 id="信息收集简介"><a href="#信息收集简介" class="headerlink" title="信息收集简介"></a>信息收集简介</h1><hr>
 <p>什么是信息收集</p>
 <p>信息收集是指通过各种方式获取所需要的信息，以便我们在后续的渗透过程更好的</p>
@@ -510,29 +509,29 @@
 <p><a href="http://whois.chinaz.com/">http://whois.chinaz.com/</a></p>
 <p>whois命令行查询</p>
 <p>Whois baidu.com</p>
-<p><img src="/qqxxsj/1.png"></p>
+<p><img src="/images/qqxxsj1.png"></p>
 <p>web接口查询</p>
 <p><a href="http://www.beianbeian.com/">http://www.beianbeian.com/</a></p>
 <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo">http://www.beian.gov.cn/portal/registerSystemInfo</a></p>
 <p><a href="http://icp.chinaz.com/">http://icp.chinaz.com/</a></p>
-<p><img src="/qqxxsj/2.png"></p>
+<p><img src="/images/qqxxsj2.png"></p>
 <hr>
 <h3 id="注册人-邮箱反查"><a href="#注册人-邮箱反查" class="headerlink" title="注册人/邮箱反查"></a>注册人/邮箱反查</h3><p>先通过whois获取注册人和邮箱，再通过注册人和邮箱反查域名。</p>
 <p>缺点是很多公司都是DNS解析的运营商注册的,查到的是运营商代替个人和公司注册</p>
 <p>的网站信息。</p>
 <p><a href="https://whois.chinaz.com/reverse?ddlSearchMode=1">https://whois.chinaz.com/reverse?ddlSearchMode=1</a></p>
 <p><a href="http://whois.4.cn/reverse">http://whois.4.cn/reverse</a></p>
-<p><img src="/qqxxsj/3.png"></p>
+<p><img src="/images/qqxxsj3.png"></p>
 <hr>
 <h3 id="子域名介绍"><a href="#子域名介绍" class="headerlink" title="子域名介绍"></a>子域名介绍</h3><p>子域名指二级域名,二级域名是顶级域名(一级域名)的下一级。</p>
 <p>比如mail.heetian.com和bbs.heetian.com是heetian.com的子域，而heetian.com则是顶级域名.com的子域。</p>
 <hr>
 <h3 id="搜索引擎-google-hacking"><a href="#搜索引擎-google-hacking" class="headerlink" title="搜索引擎-google hacking"></a>搜索引擎-google hacking</h3><p>site:hetianlab.com</p>
-<p><img src="/qqxxsj/4.png"></p>
+<p><img src="/images/qqxxsj4.png"></p>
 <hr>
 <h3 id="第三方web接口查询"><a href="#第三方web接口查询" class="headerlink" title="第三方web接口查询"></a>第三方web接口查询</h3><p><a href="https://dnsdumpster.com/">https://dnsdumpster.com/</a></p>
 <p><a href="http://tool.chinaz.com/subdomain">http://tool.chinaz.com/subdomain</a></p>
-<p><img src="/qqxxsj/5.png"></p>
+<p><img src="/images/qqxxsj5.png"></p>
 <hr>
 <h3 id="网络空间安全搜索引擎"><a href="#网络空间安全搜索引擎" class="headerlink" title="网络空间安全搜索引擎"></a>网络空间安全搜索引擎</h3><p><a href="https://fofa.so/">https://fofa.so/</a></p>
 <p>domain=“baidu.com”</p>
@@ -540,24 +539,24 @@
 <p>site:”baidu.com”</p>
 <p><a href="https://www.shodan.io/">https://www.shodan.io/</a></p>
 <p>hostname:baidu.com</p>
-<p><img src="/qqxxsj/6.png"></p>
+<p><img src="/images/qqxxsj6.png"></p>
 <hr>
 <h3 id="ssl证书查询"><a href="#ssl证书查询" class="headerlink" title="ssl证书查询"></a>ssl证书查询</h3><p><a href="https://crt.sh/">https://crt.sh/</a></p>
 <p><a href="https://developers.facebook.com/tools/ct/search/">https://developers.facebook.com/tools/ct/search/</a></p>
-<p><img src="/qqxxsj/7.png"></p>
+<p><img src="/images/qqxxsj7.png"></p>
 <hr>
 <h3 id="js文件发现子域名"><a href="#js文件发现子域名" class="headerlink" title="js文件发现子域名"></a>js文件发现子域名</h3><p><a href="https://github.com/Threezh1/JSFinder">https://github.com/Threezh1/JSFinder</a></p>
-<p><img src="/qqxxsj/8.png"></p>
+<p><img src="/images/qqxxsj8.png"></p>
 <hr>
-<h3 id="子域名挖掘机"><a href="#子域名挖掘机" class="headerlink" title="子域名挖掘机"></a>子域名挖掘机</h3><p><img src="/qqxxsj/9.png"></p>
+<h3 id="子域名挖掘机"><a href="#子域名挖掘机" class="headerlink" title="子域名挖掘机"></a>子域名挖掘机</h3><p><img src="/images/qqxxsj9.png"></p>
 <hr>
 <h3 id="OneForAll"><a href="#OneForAll" class="headerlink" title="OneForAll"></a>OneForAll</h3><p>优点：功能强大</p>
 <p>缺点：需要配置，购买api</p>
 <p><a href="https://github.com/shmilylty/OneForAll">https://github.com/shmilylty/OneForAll</a></p>
-<p><img src="/qqxxsj/10.png"></p>
+<p><img src="/images/qqxxsj10.png"></p>
 <hr>
 <h3 id="Subdomainsbrute"><a href="#Subdomainsbrute" class="headerlink" title="Subdomainsbrute"></a>Subdomainsbrute</h3><p><a href="https://github.com/lijiejie/subDomainsBrute">https://github.com/lijiejie/subDomainsBrute</a></p>
-<p><img src="/qqxxsj/11.png"></p>
+<p><img src="/images/qqxxsj11.png"></p>
 <hr>
 <h2 id="IP端口信息收集"><a href="#IP端口信息收集" class="headerlink" title="IP端口信息收集"></a>IP端口信息收集</h2><hr>
 <h3 id="IP反查域名"><a href="#IP反查域名" class="headerlink" title="IP反查域名"></a>IP反查域名</h3><p><a href="http://stool.chinaz.com/same">http://stool.chinaz.com/same</a></p>
@@ -587,20 +586,20 @@
 <p>站子站点又跟主站在同一台服务器或者同一个C段内，此时就可以通过查询子域名对应的 IP</p>
 <p>来辅助查找网站的真实IP</p>
 <hr>
-<h3 id="phpinfo文件"><a href="#phpinfo文件" class="headerlink" title="phpinfo文件"></a>phpinfo文件</h3><p><img src="/qqxxsj/12.png"></p>
-<p><img src="/qqxxsj/13.png"></p>
+<h3 id="phpinfo文件"><a href="#phpinfo文件" class="headerlink" title="phpinfo文件"></a>phpinfo文件</h3><p><img src="/images/qqxxsj12.png"></p>
+<p><img src="/images/qqxxsj13.png"></p>
 <hr>
 <h3 id="Mx记录邮件服务"><a href="#Mx记录邮件服务" class="headerlink" title="Mx记录邮件服务"></a>Mx记录邮件服务</h3><hr>
 <h3 id="网络空间搜索引擎"><a href="#网络空间搜索引擎" class="headerlink" title="网络空间搜索引擎"></a>网络空间搜索引擎</h3><p><a href="https://censys.io/">https://censys.io/</a></p>
 <p>443.https.tls.certificate.parsed.extensions.s</p>
 <p>ubject_alt_name.dns_names:hetianlab.com</p>
-<p><img src="/qqxxsj/14.png"></p>
+<p><img src="/images/qqxxsj14.png"></p>
 <hr>
 <h3 id="查询历史DNS记录"><a href="#查询历史DNS记录" class="headerlink" title="查询历史DNS记录"></a>查询历史DNS记录</h3><p><a href="https://dnsdb.io/zh-cn/">https://dnsdb.io/zh-cn/</a></p>
 <p><a href="https://securitytrails.com/">https://securitytrails.com/</a></p>
 <p><a href="https://viewdns.info/iphistory/">https://viewdns.info/iphistory/</a></p>
 <p><a href="https://www.ip138.com/">https://www.ip138.com/</a></p>
-<p><img src="/qqxxsj/15.png"></p>
+<p><img src="/images/qqxxsj15.png"></p>
 <hr>
 <h2 id="C段存活主机探测"><a href="#C段存活主机探测" class="headerlink" title="C段存活主机探测"></a>C段存活主机探测</h2><hr>
 <h3 id="Nmap介绍"><a href="#Nmap介绍" class="headerlink" title="Nmap介绍"></a>Nmap介绍</h3><p>Network Mapper，是一款开放源代码的网络探测和安全审核的工具</p>
@@ -621,7 +620,7 @@
 <p>Closed|Filtered 只发生在IP ID idle扫描</p>
 <hr>
 <h3 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h3><p>nmap -A -T4 192.168.1.1</p>
-<p><img src="/qqxxsj/16.png"></p>
+<p><img src="/images/qqxxsj16.png"></p>
 <p>单一主机扫描：namp 192.168.1.2</p>
 <p>子网扫描：namp 192.168.1.1/24</p>
 <p>多主机扫描：nmap 192.168.1.1 192.168.1.10</p>
@@ -648,11 +647,11 @@
 <p>nmap -sV -T4 -Pn -oG ServiceDetect -iL LiveHosts.txt</p>
 <hr>
 <h3 id="nmap漏洞扫描"><a href="#nmap漏洞扫描" class="headerlink" title="nmap漏洞扫描"></a>nmap漏洞扫描</h3><p>nmap.exe -p445 -v –script smb-ghost 192.168.1.0/24</p>
-<p><img src="/qqxxsj/17.png"></p>
+<p><img src="/images/qqxxsj17.png"></p>
 <hr>
 <h3 id="Nmap"><a href="#Nmap" class="headerlink" title="Nmap"></a>Nmap</h3><p>nmap -sP <a href="http://www.xxx.com/24">www.XXX.com/24</a> || nmap -sP 192.168.1.*</p>
 <p><a href="https://github.com/se55i0n/Cwebscanner">https://github.com/se55i0n/Cwebscanner</a></p>
-<p><img src="/qqxxsj/18.png"></p>
+<p><img src="/images/qqxxsj18.png"></p>
 <hr>
 <h3 id="端口简介"><a href="#端口简介" class="headerlink" title="端口简介"></a>端口简介</h3><p>在Internet上，各主机间通过TCP/IP协议发送和接受数据包，各个数据包根据其目</p>
 <p>的主机的IP地址来进行互联网络中的路由选择，从而顺利的将数据包顺利的传送给</p>
@@ -667,7 +666,7 @@
 <p>动态端口：一般不固定分配某种服务，范围：49152-65535</p>
 <p>注册端口：范围：1024-49151，用于分配给用户进程或程序</p>
 <hr>
-<h3 id="渗透端口"><a href="#渗透端口" class="headerlink" title="渗透端口"></a>渗透端口</h3><p><img src="/qqxxsj/19.png"></p>
+<h3 id="渗透端口"><a href="#渗透端口" class="headerlink" title="渗透端口"></a>渗透端口</h3><p><img src="/images/qqxxsj19.png"></p>
 <hr>
 <h3 id="FTP-21"><a href="#FTP-21" class="headerlink" title="FTP-21"></a>FTP-21</h3><p>FTP：文件传输协议，使用TCP端口20、21，20用于传输数据，21用于传输控制信</p>
 <p>息</p>
@@ -739,7 +738,7 @@
 <li><p>windows大小写不敏感，linux则区分大小写</p>
 </li>
 </ul>
-<p><img src="/qqxxsj/20.png"></p>
+<p><img src="/images/qqxxsj20.png"></p>
 <hr>
 <h4 id="网站服务-容器类型"><a href="#网站服务-容器类型" class="headerlink" title="网站服务\容器类型"></a>网站服务\容器类型</h4><ul>
 <li><p>F12查看响应头Server字段</p>
@@ -751,7 +750,7 @@
 <ul>
 <li>wappalyzer插件</li>
 </ul>
-<p><img src="/qqxxsj/21.png"></p>
+<p><img src="/images/qqxxsj21.png"></p>
 <hr>
 <h4 id="脚本类型"><a href="#脚本类型" class="headerlink" title="脚本类型"></a>脚本类型</h4><p>php，jsp，asp\aspx，python</p>
 <hr>
