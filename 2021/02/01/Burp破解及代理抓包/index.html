@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Burp破解及代理抓包 - Helo Word</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="破解（运行激活程序）打开激活程序，点击run
+
+
+
+
+
+代理抓包Burp Suite是以拦截代理的方式，拦截所有通过代理的网络流量，如客户端的请求数据、服务器端的返回信息等。Burp Suite主要,"> 
+    <meta name="author" content="John Doe"> 
+    <link rel="alternative" href="atom.xml" title="Helo Word" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">Helo Word</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Burp破解及代理抓包</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Burp破解及代理抓包</h1>
+        <div class="stuff">
+            <span>二月 01, 2021</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%B8%97%E9%80%8F/" rel="tag">渗透</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h1 id="破解（运行激活程序）"><a href="#破解（运行激活程序）" class="headerlink" title="破解（运行激活程序）"></a>破解（运行激活程序）</h1><p>打开激活程序，点击run</p>
+<p><img src="/images/bppjzb1.png"></p>
+<p><img src="/images/bppjzb2.png"></p>
+<p><img src="/images/bppjzb3.png"></p>
+<p><img src="/images/bppjzb4.png"></p>
+<hr>
+<h1 id="代理抓包"><a href="#代理抓包" class="headerlink" title="代理抓包"></a>代理抓包</h1><p>Burp Suite是以拦截代理的方式，拦截所有通过代理的网络流量，如客户端的请求数据、服务器端的返回信息等。Burp Suite主要拦截http和https协议的流量，通过拦截，Burp Suite以中间人的方式，可以对客户端请求数据、服务端返回做各种处理，以达到安全评估测试的目的</p>
+<hr>
+<h2 id="代理抓包（-Proxy设置）"><a href="#代理抓包（-Proxy设置）" class="headerlink" title="代理抓包（ Proxy设置）"></a>代理抓包（ Proxy设置）</h2><p>HTTP代理(proxy) - 它作为Web代理服务器运行，并且作为浏览器和目标Web服务器之间的中间人。它允许拦截，检查和修改在两个方向上传递的原始业务</p>
+<p><img src="/images/bppjzb5.png"></p>
+<hr>
+<h2 id="代理抓包（浏览器设置）"><a href="#代理抓包（浏览器设置）" class="headerlink" title="代理抓包（浏览器设置）"></a>代理抓包（浏览器设置）</h2><p>选项–》网络设置</p>
+<p><img src="/images/bppjzb6.png"></p>
+<hr>
+<h2 id="代理抓包（抓包）"><a href="#代理抓包（抓包）" class="headerlink" title="代理抓包（抓包）"></a>代理抓包（抓包）</h2><p><img src="/images/bppjzb7.png"></p>
+<hr>
+<h2 id="代理抓包（下载-https证书）"><a href="#代理抓包（下载-https证书）" class="headerlink" title="代理抓包（下载 https证书）"></a>代理抓包（下载 https证书）</h2><p>通常情况下 burpsuite 只抓 http 包，https 需要证书才能正常抓取。</p>
+<p>设置好代理后访问<a target="_blank" rel="noopener" href="http://burp/">http://burp</a></p>
+<p><img src="/images/bppjzb8.png"></p>
+<hr>
+<h2 id="代理抓包（安装-https证书）"><a href="#代理抓包（安装-https证书）" class="headerlink" title="代理抓包（安装 https证书）"></a>代理抓包（安装 https证书）</h2><p><img src="/images/bppjzb9.png"></p>
+<hr>
+<h2 id="代理抓包（抓取-https站点）"><a href="#代理抓包（抓取-https站点）" class="headerlink" title="代理抓包（抓取 https站点）"></a>代理抓包（抓取 https站点）</h2><p><img src="/images/bppjzb10.png"></p>
+<hr>
+<h2 id="代理抓包（快捷方式）"><a href="#代理抓包（快捷方式）" class="headerlink" title="代理抓包（快捷方式）"></a>代理抓包（快捷方式）</h2><p><img src="/images/bppjzb11.png"></p>
+<hr>
+<h1 id="Burp模块介绍及应用"><a href="#Burp模块介绍及应用" class="headerlink" title="Burp模块介绍及应用"></a>Burp模块介绍及应用</h1><p> 11大模块</p>
+<p>dashboard模块</p>
+<p>target模块</p>
+<p> proxy模块</p>
+<p> intruder模块</p>
+<p> repeater模块</p>
+<p> sequencer模块</p>
+<p> decode模块</p>
+<p> comparer模块</p>
+<p> Extender模块</p>
+<p> project options模块</p>
+<p> user options模块</p>
+<hr>
+<h2 id="Dashboard"><a href="#Dashboard" class="headerlink" title="Dashboard"></a>Dashboard</h2><p><img src="/images/bppjzb13.png"></p>
+<hr>
+<h2 id="Target"><a href="#Target" class="headerlink" title="Target"></a>Target</h2><p><img src="/images/bppjzb14.png"></p>
+<hr>
+<h2 id="Proxy-Intercept"><a href="#Proxy-Intercept" class="headerlink" title="Proxy(Intercept)"></a>Proxy(Intercept)</h2><p><img src="/images/bppjzb15.png"></p>
+<hr>
+<h2 id="Proxy-HTTP-History"><a href="#Proxy-HTTP-History" class="headerlink" title="Proxy(HTTP History)"></a>Proxy(HTTP History)</h2><p><img src="/images/bppjzb16.png"></p>
+<hr>
+<h2 id="Proxy-WebSockets-history"><a href="#Proxy-WebSockets-history" class="headerlink" title="Proxy(WebSockets history)"></a>Proxy(WebSockets history)</h2><p><img src="/images/bppjzb17.png"></p>
+<hr>
+<h2 id="Intruder-Target"><a href="#Intruder-Target" class="headerlink" title="Intruder(Target)"></a>Intruder(Target)</h2><p><img src="/images/bppjzb18.png"></p>
+<hr>
+<h2 id="Intruder-Positions"><a href="#Intruder-Positions" class="headerlink" title="Intruder(Positions)"></a>Intruder(Positions)</h2><p><img src="/images/bppjzb19.png"></p>
+<hr>
+<h2 id="Intruder-Payloads"><a href="#Intruder-Payloads" class="headerlink" title="Intruder(Payloads)"></a>Intruder(Payloads)</h2><p><img src="/images/bppjzb20.png"></p>
+<hr>
+<h2 id="Repeater"><a href="#Repeater" class="headerlink" title="Repeater"></a>Repeater</h2><p>可以从Proxy history、site map、Scanner等模块中右键菜单send to repeater发送到</p>
+<p>repeater，对页面数据进行修改发送。</p>
+<p>点击go，发送请求，右边响应请求。</p>
+<p>可以通过“&lt;“和”&gt;“来返回上一次和下一个操作。</p>
+<hr>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class='side'>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A0%B4%E8%A7%A3%EF%BC%88%E8%BF%90%E8%A1%8C%E6%BF%80%E6%B4%BB%E7%A8%8B%E5%BA%8F%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">破解（运行激活程序）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E6%8A%93%E5%8C%85"><span class="toc-number">2.</span> <span class="toc-text">代理抓包</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E6%8A%93%E5%8C%85%EF%BC%88-Proxy%E8%AE%BE%E7%BD%AE%EF%BC%89"><span class="toc-number">2.1.</span> <span class="toc-text">代理抓包（ Proxy设置）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E6%8A%93%E5%8C%85%EF%BC%88%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%BE%E7%BD%AE%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">代理抓包（浏览器设置）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E6%8A%93%E5%8C%85%EF%BC%88%E6%8A%93%E5%8C%85%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">代理抓包（抓包）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E6%8A%93%E5%8C%85%EF%BC%88%E4%B8%8B%E8%BD%BD-https%E8%AF%81%E4%B9%A6%EF%BC%89"><span class="toc-number">2.4.</span> <span class="toc-text">代理抓包（下载 https证书）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E6%8A%93%E5%8C%85%EF%BC%88%E5%AE%89%E8%A3%85-https%E8%AF%81%E4%B9%A6%EF%BC%89"><span class="toc-number">2.5.</span> <span class="toc-text">代理抓包（安装 https证书）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E6%8A%93%E5%8C%85%EF%BC%88%E6%8A%93%E5%8F%96-https%E7%AB%99%E7%82%B9%EF%BC%89"><span class="toc-number">2.6.</span> <span class="toc-text">代理抓包（抓取 https站点）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E6%8A%93%E5%8C%85%EF%BC%88%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%EF%BC%89"><span class="toc-number">2.7.</span> <span class="toc-text">代理抓包（快捷方式）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Burp%E6%A8%A1%E5%9D%97%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%BA%94%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">Burp模块介绍及应用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Dashboard"><span class="toc-number">3.1.</span> <span class="toc-text">Dashboard</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Target"><span class="toc-number">3.2.</span> <span class="toc-text">Target</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Proxy-Intercept"><span class="toc-number">3.3.</span> <span class="toc-text">Proxy(Intercept)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Proxy-HTTP-History"><span class="toc-number">3.4.</span> <span class="toc-text">Proxy(HTTP History)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Proxy-WebSockets-history"><span class="toc-number">3.5.</span> <span class="toc-text">Proxy(WebSockets history)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Intruder-Target"><span class="toc-number">3.6.</span> <span class="toc-text">Intruder(Target)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Intruder-Positions"><span class="toc-number">3.7.</span> <span class="toc-text">Intruder(Positions)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Intruder-Payloads"><span class="toc-number">3.8.</span> <span class="toc-text">Intruder(Payloads)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Repeater"><span class="toc-number">3.9.</span> <span class="toc-text">Repeater</span></a></li></ol></li></ol>	
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
