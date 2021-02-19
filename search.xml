@@ -1,35 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Burpsuite工具介绍</title>
-    <url>/2021/02/01/Burpsuite%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h1 id="Burpsuite"><a href="#Burpsuite" class="headerlink" title="Burpsuite"></a>Burpsuite</h1><p>Burp Suite是一个集成化的渗透测试工具，它集合了多种渗透测试组件，使我们自</p>
-<p>动化地或手工地能更好的完成对web应用的渗透测试和攻击。</p>
-<hr>
-<h2 id="Burp环境变量"><a href="#Burp环境变量" class="headerlink" title="Burp环境变量"></a>Burp环境变量</h2><p>Burp基于java环境，需要下载JDK环境包</p>
-<hr>
-<h2 id="Burp环境变量配置"><a href="#Burp环境变量配置" class="headerlink" title="Burp环境变量配置"></a>Burp环境变量配置</h2><p>右键此电脑–》属性–》高级系统设置–》环境变量，新建系统变量</p>
-<p>变量名：JAVA_HOME</p>
-<p>变量值：安装路径</p>
-<p><img src="/images/bpgjjs1.png"></p>
-<p>新建系统变量，变量名：CLASSPATH，</p>
-<p>变量值为：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</p>
-<p><img src="/images/bpgjjs2.png"></p>
-<p>编辑path，新建%JAVA_HOME%\bin，%JAVA_HOME%\jre\bin</p>
-<p><img src="/images/bpgjjs3.png"></p>
-<p>打开cmd，输入：java –version</p>
-<p>如果输出java版本信息说明配置成功</p>
-<hr>
-]]></content>
-      <categories>
-        <category>渗透工具</category>
-      </categories>
-      <tags>
-        <tag>渗透</tag>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Burp破解及代理抓包</title>
     <url>/2021/02/01/Burp%E7%A0%B4%E8%A7%A3%E5%8F%8A%E4%BB%A3%E7%90%86%E6%8A%93%E5%8C%85/</url>
     <content><![CDATA[<h1 id="破解（运行激活程序）"><a href="#破解（运行激活程序）" class="headerlink" title="破解（运行激活程序）"></a>破解（运行激活程序）</h1><p>打开激活程序，点击run</p>
@@ -102,73 +73,18 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo博客搭建</title>
-    <url>/2021/01/28/hexo%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h2 id="1-安装node-js和npm"><a href="#1-安装node-js和npm" class="headerlink" title="1.安装node.js和npm"></a>1.安装node.js和npm</h2><p>前往nodejs.cn/download或nodejs.org/download下载</p>
-<p><img src="/images/1.png"></p>
-<p>这里我选择windows.msi 64位文件下载</p>
-<p>进行安装</p>
-<p><img src="/images/2.png"></p>
-<p>更改路径</p>
-<p><img src="/images/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png"></p>
-<p>我勾选了自动安装需要的tools</p>
-<p>安装完成后输入node -v查看打印输出</p>
-<p>输入npm -v打印输出</p>
-<p>安装时会将引导文件添加进PATH 环境变量</p>
-<p><img src="/images/3.png"></p>
+    <title>博客主题更改</title>
+    <url>/2021/01/31/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9/</url>
+    <content><![CDATA[<h1 id="博客主题安装"><a href="#博客主题安装" class="headerlink" title="博客主题安装"></a>博客主题安装</h1><p>博客主题安装可以参考我安装的主题，具体安装步骤均在链接中，作者有写</p>
+<p><a href="https://github.com/Fechin/hexo-theme-diaspora">https://github.com/Fechin/hexo-theme-diaspora</a></p>
 <hr>
-<h1 id="2-安装相关环境"><a href="#2-安装相关环境" class="headerlink" title="2.安装相关环境"></a>2.安装相关环境</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install express -g</span><br><span class="line">npm install jade -g</span><br><span class="line">npm install mysql -g</span><br></pre></td></tr></table></figure>
-
-
-<p>这里会出现安装缓慢的情况需要使用vpn或者别的方法，我使用的是vpn</p>
-<p>默认情况下上述组件都是安装在自定义的文件目录下D:\nodejs\node_moudules文件夹下，这也是nodejs相关组件的自动查找路径.</p>
-<hr>
-<h1 id="3-安装CoffeeScript"><a href="#3-安装CoffeeScript" class="headerlink" title="3.安装CoffeeScript"></a>3.安装CoffeeScript</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install coffee-script -g</span><br></pre></td></tr></table></figure>
-
-
-<p>确认是否安装成功，使用coffee -v 出现版本号表示安装成功</p>
-<p><img src="/images/4.png" alt="4"></p>
-<hr>
-<h1 id="4-调试node-js"><a href="#4-调试node-js" class="headerlink" title="4.调试node.js"></a>4.调试node.js</h1><h2 id="更改npm配置的默认路径"><a href="#更改npm配置的默认路径" class="headerlink" title="更改npm配置的默认路径"></a>更改npm配置的默认路径</h2><p>如果不修改npm下载模块的默认位置，默认的安装路径是：</p>
-<p>C:\Users\Administrator\AppData\Roaming下的npm和npm-cache</p>
-<p>所有的模块都安装在这里</p>
-<p>找到node安装路径，依次进入node_modules &gt; npm</p>
-<p>如：D:\nodejs\node_modules\npm，在文件夹中找到npmrc文件，使用编辑器打开</p>
-<p><img src="/images/5.png"></p>
-<p>prefix配置npm的全局模块的存放路径，cache是缓存路径</p>
-<p>模块都安装在prefix路径，cache是缓存的一些模块的版本、包的信息。</p>
-<p>更改为</p>
-<p><img src="/images/6.png"></p>
-<hr>
-<h1 id="5-下载安装git"><a href="#5-下载安装git" class="headerlink" title="5.下载安装git"></a>5.下载安装git</h1><p><a href="https://github.com/git-for-windows/git/releases/tag/v2.8.3.windows.1">https://github.com/git-for-windows/git/releases/tag/v2.8.3.windows.1</a></p>
-<hr>
-<h1 id="6-安装hexo"><a href="#6-安装hexo" class="headerlink" title="6.安装hexo"></a>6.安装hexo</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<p>安装hexo会出现两个warn，直接掠过就行</p>
-<p><img src="/images/7.png"></p>
-<p>测试命令hexo</p>
-<p><img src="/images/8.png"></p>
-<p>估计是找不到这个命令，如果没有修改过默认地址的应该是在appdata目录，前面我已经设置成了D:\nodejs\node_global，切换到目录下，测试命令</p>
-<p><img src="/images/9.png"></p>
-<p>可以使用，那就把这个路径胶乳到path环境变量中，环境变量配置的过程中可能会出现无法运行的情况，我是将路径改为D:\nodejs\node_global\node_modules.bin这样，或者尝试使用管理员运行cmd，我是先改了path，试了不行，管理员运行了就可以用了，感性的可以尝试一下。</p>
-<hr>
-<h1 id="7-hexo使用"><a href="#7-hexo使用" class="headerlink" title="7.hexo使用"></a>7.hexo使用</h1><p>我是在D盘下md blog 创建了一个blog文件夹，然后切换到目录下使用hexo init 就可以创建i一个本地文件。</p>
-<p>hexo new “XXX”或者 hexo n “xxx”创建一个md文件。</p>
-<p>D:\blog\source_posts 这里存放着文章，可以在这里进行编辑。</p>
-<p>使用typora或者其他编辑工具编辑md文件就可以了。</p>
-<p>使用hexo generate上传更新文件</p>
-<p>使用hexo server运行服务</p>
-<p>使用hexo deploy进行部署</p>
-<p>都可以使用简写，比如hexo s启动服务。</p>
-<hr>
-<h1 id="8-hexo如何上传图片"><a href="#8-hexo如何上传图片" class="headerlink" title="8.hexo如何上传图片"></a>8.hexo如何上传图片</h1><p>1.调整程序配置文件_config.yml里的post_asset_folder:这个选项设置为True</p>
-<p>2.在source下创建/images文件夹，先把图片xx.jpg/png复制到这个文件夹</p>
-<p>3.在xxx.md中想引入图片是，只需要在xxx.md中按照：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![想输入的名字，可以不输入]（&#x2F;images&#x2F;xx.jpg）</span><br></pre></td></tr></table></figure>
-<p>然后hexo g 一下就可以看到图片正常上传了。</p>
 ]]></content>
       <categories>
         <category>博客</category>
       </categories>
+      <tags>
+        <tag>链接</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hexo全局配置_config.yml详解</title>
@@ -273,286 +189,102 @@
       </categories>
   </entry>
   <entry>
-    <title>博客主题更改</title>
-    <url>/2021/01/31/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9/</url>
-    <content><![CDATA[<h1 id="博客主题安装"><a href="#博客主题安装" class="headerlink" title="博客主题安装"></a>博客主题安装</h1><p>博客主题安装可以参考我安装的主题，具体安装步骤均在链接中，作者有写</p>
-<p><a href="https://github.com/Fechin/hexo-theme-diaspora">https://github.com/Fechin/hexo-theme-diaspora</a></p>
+    <title>Burpsuite工具介绍</title>
+    <url>/2021/02/01/Burpsuite%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h1 id="Burpsuite"><a href="#Burpsuite" class="headerlink" title="Burpsuite"></a>Burpsuite</h1><p>Burp Suite是一个集成化的渗透测试工具，它集合了多种渗透测试组件，使我们自</p>
+<p>动化地或手工地能更好的完成对web应用的渗透测试和攻击。</p>
 <hr>
+<h2 id="Burp环境变量"><a href="#Burp环境变量" class="headerlink" title="Burp环境变量"></a>Burp环境变量</h2><p>Burp基于java环境，需要下载JDK环境包</p>
+<hr>
+<h2 id="Burp环境变量配置"><a href="#Burp环境变量配置" class="headerlink" title="Burp环境变量配置"></a>Burp环境变量配置</h2><p>右键此电脑–》属性–》高级系统设置–》环境变量，新建系统变量</p>
+<p>变量名：JAVA_HOME</p>
+<p>变量值：安装路径</p>
+<p><img src="/images/bpgjjs1.png"></p>
+<p>新建系统变量，变量名：CLASSPATH，</p>
+<p>变量值为：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</p>
+<p><img src="/images/bpgjjs2.png"></p>
+<p>编辑path，新建%JAVA_HOME%\bin，%JAVA_HOME%\jre\bin</p>
+<p><img src="/images/bpgjjs3.png"></p>
+<p>打开cmd，输入：java –version</p>
+<p>如果输出java版本信息说明配置成功</p>
+<hr>
+]]></content>
+      <categories>
+        <category>渗透工具</category>
+      </categories>
+      <tags>
+        <tag>渗透</tag>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客搭建</title>
+    <url>/2021/01/28/hexo%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="1-安装node-js和npm"><a href="#1-安装node-js和npm" class="headerlink" title="1.安装node.js和npm"></a>1.安装node.js和npm</h2><p>前往nodejs.cn/download或nodejs.org/download下载</p>
+<p><img src="/images/1.png"></p>
+<p>这里我选择windows.msi 64位文件下载</p>
+<p>进行安装</p>
+<p><img src="/images/2.png"></p>
+<p>更改路径</p>
+<p><img src="/images/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png"></p>
+<p>我勾选了自动安装需要的tools</p>
+<p>安装完成后输入node -v查看打印输出</p>
+<p>输入npm -v打印输出</p>
+<p>安装时会将引导文件添加进PATH 环境变量</p>
+<p><img src="/images/3.png"></p>
+<hr>
+<h1 id="2-安装相关环境"><a href="#2-安装相关环境" class="headerlink" title="2.安装相关环境"></a>2.安装相关环境</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install express -g</span><br><span class="line">npm install jade -g</span><br><span class="line">npm install mysql -g</span><br></pre></td></tr></table></figure>
+
+
+<p>这里会出现安装缓慢的情况需要使用vpn或者别的方法，我使用的是vpn</p>
+<p>默认情况下上述组件都是安装在自定义的文件目录下D:\nodejs\node_moudules文件夹下，这也是nodejs相关组件的自动查找路径.</p>
+<hr>
+<h1 id="3-安装CoffeeScript"><a href="#3-安装CoffeeScript" class="headerlink" title="3.安装CoffeeScript"></a>3.安装CoffeeScript</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install coffee-script -g</span><br></pre></td></tr></table></figure>
+
+
+<p>确认是否安装成功，使用coffee -v 出现版本号表示安装成功</p>
+<p><img src="/images/4.png" alt="4"></p>
+<hr>
+<h1 id="4-调试node-js"><a href="#4-调试node-js" class="headerlink" title="4.调试node.js"></a>4.调试node.js</h1><h2 id="更改npm配置的默认路径"><a href="#更改npm配置的默认路径" class="headerlink" title="更改npm配置的默认路径"></a>更改npm配置的默认路径</h2><p>如果不修改npm下载模块的默认位置，默认的安装路径是：</p>
+<p>C:\Users\Administrator\AppData\Roaming下的npm和npm-cache</p>
+<p>所有的模块都安装在这里</p>
+<p>找到node安装路径，依次进入node_modules &gt; npm</p>
+<p>如：D:\nodejs\node_modules\npm，在文件夹中找到npmrc文件，使用编辑器打开</p>
+<p><img src="/images/5.png"></p>
+<p>prefix配置npm的全局模块的存放路径，cache是缓存路径</p>
+<p>模块都安装在prefix路径，cache是缓存的一些模块的版本、包的信息。</p>
+<p>更改为</p>
+<p><img src="/images/6.png"></p>
+<hr>
+<h1 id="5-下载安装git"><a href="#5-下载安装git" class="headerlink" title="5.下载安装git"></a>5.下载安装git</h1><p><a href="https://github.com/git-for-windows/git/releases/tag/v2.8.3.windows.1">https://github.com/git-for-windows/git/releases/tag/v2.8.3.windows.1</a></p>
+<hr>
+<h1 id="6-安装hexo"><a href="#6-安装hexo" class="headerlink" title="6.安装hexo"></a>6.安装hexo</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>安装hexo会出现两个warn，直接掠过就行</p>
+<p><img src="/images/7.png"></p>
+<p>测试命令hexo</p>
+<p><img src="/images/8.png"></p>
+<p>估计是找不到这个命令，如果没有修改过默认地址的应该是在appdata目录，前面我已经设置成了D:\nodejs\node_global，切换到目录下，测试命令</p>
+<p><img src="/images/9.png"></p>
+<p>可以使用，那就把这个路径胶乳到path环境变量中，环境变量配置的过程中可能会出现无法运行的情况，我是将路径改为D:\nodejs\node_global\node_modules.bin这样，或者尝试使用管理员运行cmd，我是先改了path，试了不行，管理员运行了就可以用了，感性的可以尝试一下。</p>
+<hr>
+<h1 id="7-hexo使用"><a href="#7-hexo使用" class="headerlink" title="7.hexo使用"></a>7.hexo使用</h1><p>我是在D盘下md blog 创建了一个blog文件夹，然后切换到目录下使用hexo init 就可以创建i一个本地文件。</p>
+<p>hexo new “XXX”或者 hexo n “xxx”创建一个md文件。</p>
+<p>D:\blog\source_posts 这里存放着文章，可以在这里进行编辑。</p>
+<p>使用typora或者其他编辑工具编辑md文件就可以了。</p>
+<p>使用hexo generate上传更新文件</p>
+<p>使用hexo server运行服务</p>
+<p>使用hexo deploy进行部署</p>
+<p>都可以使用简写，比如hexo s启动服务。</p>
+<hr>
+<h1 id="8-hexo如何上传图片"><a href="#8-hexo如何上传图片" class="headerlink" title="8.hexo如何上传图片"></a>8.hexo如何上传图片</h1><p>1.调整程序配置文件_config.yml里的post_asset_folder:这个选项设置为True</p>
+<p>2.在source下创建/images文件夹，先把图片xx.jpg/png复制到这个文件夹</p>
+<p>3.在xxx.md中想引入图片是，只需要在xxx.md中按照：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![想输入的名字，可以不输入]（&#x2F;images&#x2F;xx.jpg）</span><br></pre></td></tr></table></figure>
+<p>然后hexo g 一下就可以看到图片正常上传了。</p>
 ]]></content>
       <categories>
         <category>博客</category>
       </categories>
-      <tags>
-        <tag>链接</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>渗透测试工具环境准备</title>
-    <url>/2021/01/31/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/</url>
-    <content><![CDATA[<h1 id="渗透测试工具环境准备"><a href="#渗透测试工具环境准备" class="headerlink" title="渗透测试工具环境准备"></a>渗透测试工具环境准备</h1><hr>
-<hr>
-<h2 id="1-VMware安装"><a href="#1-VMware安装" class="headerlink" title="1.VMware安装"></a>1.VMware安装</h2><p>VMware官网：<a href="https://www.vmware.com/">https://www.vmware.com/</a></p>
-<p>VMware Workstation pro 16 许可证密钥：</p>
-<p>批量永久激活  ZF3R0-FHED2-M80TY-8QYGC-NPKYF</p>
-<p>YF390-0HF8P-M81RQ-2DXQE-M2UT6</p>
-<p>ZF71R-DMX85-08DQY-8YMNC-PPHV8</p>
-<hr>
-<h2 id="2-kali"><a href="#2-kali" class="headerlink" title="2.kali"></a>2.kali</h2><p>Kali Linux是基于Debian的Linux发行版，旨在进行高级渗透测试和安全审核。Kali包含数百种工具，可用于各种</p>
-<p>信息安全任务，例如渗透测试，安全研究，计算机取证和逆向工程。Kali Linux由领先的信息安全培训公司</p>
-<p>Offensive Security开发、资助和维护。</p>
-<p>Kali官网：<a href="https://www.kali.org/">https://www.kali.org/</a></p>
-<p><a href="https://blog.csdn.net/qq_40950957/article/details/80468030">https://blog.csdn.net/qq_40950957/article/details/80468030</a></p>
-<p><a href="https://www.cnblogs.com/yzxag/p/12386917.html">https://www.cnblogs.com/yzxag/p/12386917.html</a></p>
-<hr>
-<h2 id="3-Windows安装"><a href="#3-Windows安装" class="headerlink" title="3.Windows安装"></a>3.Windows安装</h2><p><a href="https://jingyan.baidu.com/article/f7ff0bfcc8b3e02e27bb134f.html">https://jingyan.baidu.com/article/f7ff0bfcc8b3e02e27bb134f.html</a></p>
-<p>MSDN: <a href="https://msdn.itellyou.cn/">https://msdn.itellyou.cn/</a></p>
-<hr>
-<h2 id="4-Linus目录结构"><a href="#4-Linus目录结构" class="headerlink" title="4.Linus目录结构"></a>4.Linus目录结构</h2><p>/bin：</p>
-<p>bin是Binary的缩写, 这个目录存放着最经常使用的命令。</p>
-<p>/boot：</p>
-<p>这里存放的是启动Linux时使用的一些核心文件，包括一些连接文件以及镜像文件。</p>
-<p>/dev ：</p>
-<p>dev是Device(设备)的缩写, 该目录下存放的是Linux的外部设备，在Linux中访问设备的方式和访问文件的方式是</p>
-<p>相同的。</p>
-<p>/etc：</p>
-<p>这个目录用来存放所有的系统管理所需要的配置文件和子目录。</p>
-<p>/home：</p>
-<p>用户的主目录，在Linux中，每个用户都有一个自己的目录，一般该目录名是以用户的账号命名的。</p>
-<p>/lib：</p>
-<p>这个目录里存放着系统最基本的动态连接共享库，其作用类似于Windows里的DLL文件。几乎所有的应用程序都</p>
-<p>需要用到这些共享库。</p>
-<p>内容</p>
-<p>/opt：</p>
-<p>这是给主机额外安装软件所摆放的目录。比如你安装一个ORACLE数据库则就可以放到这个目录下。默认是空的。</p>
-<p>/root：</p>
-<p>该目录为系统管理员，也称作超级权限者的用户主目录。</p>
-<p>/sbin：</p>
-<p>s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序。</p>
-<p>内容</p>
-<p>/usr：</p>
-<p>这是一个非常重要的目录，用户的很多应用程序和文件都放在这个目录下，类似于windows下的program files</p>
-<p>目录。</p>
-<p>/usr/bin：</p>
-<p>系统用户使用的应用程序。</p>
-<p>/usr/sbin：</p>
-<p>超级用户使用的比较高级的管理程序和系统守护程序。</p>
-<p>内容</p>
-<p>/tmp：</p>
-<p>这个目录是用来存放一些临时文件的。</p>
-<p>/var：</p>
-<p>这个目录中存放着在不断扩充着的东西，我们习惯将那些经常被修改的目录放在这个目录下。包括各种日志文件。</p>
-<hr>
-<h2 id="5-Linux文件属性"><a href="#5-Linux文件属性" class="headerlink" title="5.Linux文件属性"></a>5.Linux文件属性</h2><p>r：4</p>
-<p>w：2</p>
-<p>x：1</p>
-<p>属主：u（user）</p>
-<p>数组：g（group）</p>
-<p>其他：o（other）</p>
-<p>chmod u+x test</p>
-<p>chown root.root test</p>
-<p><img src="/images/shentouhuanjing1.png"></p>
-<hr>
-<h2 id="6-文件目录管理器"><a href="#6-文件目录管理器" class="headerlink" title="6.文件目录管理器"></a>6.文件目录管理器</h2><p>ls</p>
-<p>cd</p>
-<p>pwd</p>
-<p>mkdir</p>
-<p>rmdir</p>
-<p>cp</p>
-<p>rm</p>
-<p>mv</p>
-<p>绝对路径：由根目录写起 root@kali:~# cd /var/www/html</p>
-<p>相对路径：不是由根写起 root@kali:/var/www/html# cd ../../log/</p>
-<hr>
-<h2 id="7-Vim编辑器"><a href="#7-Vim编辑器" class="headerlink" title="7.Vim编辑器"></a>7.Vim编辑器</h2><p>基本上 vi/vim 共分为三种模式，分别是命令模式（Command mode），输入模式（Insert mode）和底线命令</p>
-<p>模式（Last line mode）。 这三种模式的作用分别是：</p>
-<p>命令模式：</p>
-<p>用户刚刚启动 vi/vim，便进入了命令模式。</p>
-<p>此状态下敲击键盘动作会被Vim识别为命令，而非输入字符。比如我们此时按下i，并不会输入一个字符，i被当作</p>
-<p>了一个命令。</p>
-<p>命令模式常用的几个命令：</p>
-<p>i 切换到输入模式，以输入字符。</p>
-<p>x 删除当前光标所在处的字符。</p>
-<p>: 切换到底线命令模式，以在最底一行输入命令。</p>
-<p>若想要编辑文本：启动Vim，进入了命令模式，按下i，切换到输入模式。</p>
-<p>ESC，退出输入模式，切换到命令模式</p>
-<p>底线命令模式</p>
-<p>在命令模式下按下:（英文冒号）就进入了底线命令模式。</p>
-<p>底线命令模式可以输入单个或多个字符的命令，可用的命令非常多。</p>
-<p>在底线命令模式中，基本的命令有（已经省略了冒号）：</p>
-<p>q 退出程序</p>
-<p>w 保存文件</p>
-<p>按ESC键可随时退出底线命令模式。</p>
-<p><img src="/images/shentouhuanjing2.png"></p>
-<hr>
-<h2 id="8-kali网络配置及设置源"><a href="#8-kali网络配置及设置源" class="headerlink" title="8.kali网络配置及设置源"></a>8.kali网络配置及设置源</h2><p>配置IP：</p>
-<p>/etc/network/interfaces</p>
-<p>配置DNS：</p>
-<p>/etc/resolv.conf</p>
-<p>重启服务</p>
-<p>service networking restart</p>
-<p>service network-manager restart</p>
-<p>自动获取IP</p>
-<p>dhclient</p>
-<p>#中科大</p>
-<p>deb <a href="http://mirrors.ustc.edu.cn/kali">http://mirrors.ustc.edu.cn/kali</a> kali-rolling main non-free contrib</p>
-<p>deb-src <a href="http://mirrors.ustc.edu.cn/kali">http://mirrors.ustc.edu.cn/kali</a> kali-rolling main non-free contrib</p>
-<p>#阿里云</p>
-<p>deb <a href="http://mirrors.aliyun.com/kali">http://mirrors.aliyun.com/kali</a> kali-rolling main non-free contrib</p>
-<p>deb-src <a href="http://mirrors.aliyun.com/kali">http://mirrors.aliyun.com/kali</a> kali-rolling main non-free contrib</p>
-<p>cp /etc/apt/sources.list /etc/apt/sources.list.bak</p>
-<p>vim /etc/apt/sources.list</p>
-<p>apt-get update</p>
-<p>apt-get clean</p>
-<hr>
-<h2 id="9-kali其他配置–设置中文"><a href="#9-kali其他配置–设置中文" class="headerlink" title="9.kali其他配置–设置中文"></a>9.kali其他配置–设置中文</h2><p>Kali2019.03版本默认安装时选择中文，进入桌面后会出现乱码：</p>
-<p>需要自行安装中文字体</p>
-<p>apt-get install xfonts-intl-chinese</p>
-<p>apt-get install ttf-wqy-microhei</p>
-<p>设置语言</p>
-<p>dpkg-reconfigure locales</p>
-<p>进入图形界面，选中en_US.UTF-8 UTF-8和zh_CN.UTF-8 UTF-8（空格是选择，tab是切换，*是选中）并将</p>
-<p>en_US.UTF-8选为默认。</p>
-<p>重启 reboot</p>
-<hr>
-<h2 id="10-kali其他配置–配置python"><a href="#10-kali其他配置–配置python" class="headerlink" title="10.kali其他配置–配置python"></a>10.kali其他配置–配置python</h2><p>Kali2019.03版本默认安装python2.7.17和python3.7.5，但需自行配置pip</p>
-<p>pip 是一个 Python 包安装与管理工具</p>
-<p>curl <a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a> -o get-pip.py</p>
-<p>python2 get-pip.py python3 get-pip.py</p>
-<p>pip2 list pip3 list</p>
-<p>pip3 install pwntools</p>
-<p>#pip 使用国内代理</p>
-<p>pip3 install -r requirements.txt -i <a href="https://mirrors.ustc.edu.cn/pypi/web/simple">https://mirrors.ustc.edu.cn/pypi/web/simple</a></p>
-<p><img src="/images/shentouhuanjing3.png"></p>
-<hr>
-<h2 id="11-kali其他配置–apt-get"><a href="#11-kali其他配置–apt-get" class="headerlink" title="11.kali其他配置–apt-get"></a>11.kali其他配置–apt-get</h2><p>apt-get 可以从认证软件源下载软件包及相关信息，以便安装和升级软件包，或者用于移除软件包。在这些过程中，软件包依赖会被妥善处理。</p>
-<p>常用命令：</p>
-<p>update - 取回更新的软件包列表信息</p>
-<p>upgrade - 进行一次升级</p>
-<p>install - 安装新的软件包(注：软件包名称是 libc6 而非 libc6.deb)</p>
-<p>reinstall - Reinstall packages (pkg is libc6 not libc6.deb)</p>
-<p>remove - 卸载软件包</p>
-<hr>
-<h2 id="12-kali其他配置–git"><a href="#12-kali其他配置–git" class="headerlink" title="12.kali其他配置–git"></a>12.kali其他配置–git</h2><p>Git 是一个开源的分布式版本控制系统,用于敏捷高效地处理任何或小或大的项目。</p>
-<p>常用命令：</p>
-<p>开始一个工作区（参见：git help tutorial）</p>
-<p>clone 克隆仓库到一个新目录</p>
-<p>init 创建一个空的 Git 仓库或重新初始化一个已存在的仓库</p>
-<p>在当前变更上工作（参见：git help everyday）</p>
-<p>add 添加文件内容至索引</p>
-<p>mv 移动或重命名一个文件、目录或符号链接</p>
-<p>rm 从工作区和索引中删除文件</p>
-<p>git clone <a href="https://github.com/shmilylty/OneForAll.git">https://github.com/shmilylty/OneForAll.git</a></p>
-<p><img src="/images/shentouhuanjing4.png"></p>
-<p># 配置git socks代理</p>
-<p>  前提是你本地有 socks5 代理：</p>
-<p><img src="/images/shentouhuanjing5.png"></p>
-<p>本地socks开启局域网连接</p>
-<p>配置git代理</p>
-<p>git config –global http.proxy ‘socks5://127.0.0.1:1080’</p>
-<p>git config –global https.proxy ‘socks5://127.0.0.1:1080’</p>
-<hr>
-<h2 id="13-kali其他配置–ssh"><a href="#13-kali其他配置–ssh" class="headerlink" title="13.kali其他配置–ssh"></a>13.kali其他配置–ssh</h2><p>SSH 为 Secure Shell 的缩写，由 IETF 的网络小组（Network Working Group）所制定；SSH 为建立在应用层</p>
-<p>基础上的安全协议。SSH 是较可靠，专为远程登录会话和其他网络服务提供安全性的协议。</p>
-<p>配置ssh</p>
-<p>vim /etc/ssh/sshd_config</p>
-<p>开启密码登录、允许root用户登录</p>
-<p>开启或重启ssh:</p>
-<p>service ssh start service ssh restart</p>
-<p>可以使用netstat -anltup查看22端口是否开启监听</p>
-<p>添加开机启动</p>
-<p>update-rc.d ssh enable</p>
-<p>终端连接</p>
-<p>ifconfig</p>
-<p>ssh <a href="mailto:&#x72;&#x6f;&#111;&#116;&#x40;&#x31;&#x39;&#x32;&#46;&#49;&#x36;&#56;&#x2e;&#49;&#50;&#x33;&#x2e;&#49;&#51;&#x36;">&#x72;&#x6f;&#111;&#116;&#x40;&#x31;&#x39;&#x32;&#46;&#49;&#x36;&#56;&#x2e;&#49;&#50;&#x33;&#x2e;&#49;&#51;&#x36;</a></p>
-<p><img src="/images/shentouhuanjing6.png"></p>
-<hr>
-<h2 id="14-Kali-Tools"><a href="#14-Kali-Tools" class="headerlink" title="14.Kali Tools"></a>14.Kali Tools</h2><p>\1. 信息收集</p>
-<p>\2. 漏洞分析</p>
-<p>\3. WEB应用分析</p>
-<p>\4. 数据库评估</p>
-<p>\5. 密码攻击</p>
-<p>\6. 无线攻击</p>
-<p>\7. 逆向工程</p>
-<p>\8. 利用工具</p>
-<p>\9. 嗅探&amp;欺骗</p>
-<p>\10. 后渗透攻击</p>
-<p>\11. 取证工具</p>
-<p>\12. 报告工具</p>
-<p>\13. 社会工程学工具</p>
-<hr>
-<h2 id="15-Windows安装JDK8"><a href="#15-Windows安装JDK8" class="headerlink" title="15.Windows安装JDK8"></a>15.Windows安装JDK8</h2><p>下载JDK8： <a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html</a></p>
-<p>配置PATH环境变量：</p>
-<p>变量：Java_Home</p>
-<p>值：C:\Program Files\Java\jdk1.8.0_261</p>
-<p><img src="/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/7.png"></p>
-<p><img src="/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/8.png"></p>
-<p>变量：CLASSPATH</p>
-<p>值：.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar</p>
-<p>变量：Path</p>
-<p>值：%JAVA_HOME%\bin</p>
-<p>%JAVA_HOME%\jre\bin</p>
-<hr>
-<h2 id="15-Linux安装JDK8"><a href="#15-Linux安装JDK8" class="headerlink" title="15.Linux安装JDK8"></a>15.Linux安装JDK8</h2><p>包管理器安装：</p>
-<p>yum -y list java*</p>
-<p>yum install java-1.8.0-openjdk* -y</p>
-<p>apt -y</p>
-<p><img src="/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/9.png"></p>
-<p>源码安装：</p>
-<p>mdkir /usr/java</p>
-<p>cd /usr/java</p>
-<p>tar -zxvf jdk-8u241-linux-x64.tar.gz</p>
-<p>mv jdk-1.8._241 jdk8</p>
-<p>vim /etc/profile # 编辑profile配置文件，添加如下内容</p>
-<p>export JAVA_HOME=/usr/java/jdk8</p>
-<p>export JRE_HOME=${JAVA_HOME}/jre</p>
-<p>export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:$CLASSPATH</p>
-<p>export JAVA_PATH=${JAVA_HOME}/bin:${JRE_HOME}/bin</p>
-<p>export PATH=$PATH:${JAVA_PATH}</p>
-<p>验证安装：</p>
-<p>source /etc/profile</p>
-<p>java –version</p>
-<p><img src="/images/shentouhuanjing10.png"></p>
-<hr>
-<h2 id="16-Windows安装Python3"><a href="#16-Windows安装Python3" class="headerlink" title="16.Windows安装Python3"></a>16.Windows安装Python3</h2><p>Microsoft Store安装python3</p>
-<p><img src="/images/shengtouhuanjing11.png"></p>
-<p>python官网下载安装程序：</p>
-<p><a href="https://www.python.org/ftp/python/3.7.7/python-3.7.7-amd64.exe">https://www.python.org/ftp/python/3.7.7/python-3.7.7-amd64.exe</a></p>
-<p>Customize installation：</p>
-<p>自定义安装pip、IDLE、安装路径等</p>
-<p><img src="/images/shentouhuanjing12.png"></p>
-<hr>
-<h2 id="17-Linus安装Python3"><a href="#17-Linus安装Python3" class="headerlink" title="17.Linus安装Python3"></a>17.Linus安装Python3</h2><p>mkdir -p /usr/local/python3</p>
-<p>yum -y install wget gcc libffi-devel</p>
-<p>wget <a href="https://www.python.org/ftp/python/3.7.7/Python-3.7.7.tgz">https://www.python.org/ftp/python/3.7.7/Python-3.7.7.tgz</a></p>
-<p>tar -zxf Python-3.7.7.tgz</p>
-<p>cd Python-3.7.7</p>
-<p>./configure –prefix=/usr/local/python3</p>
-<p>make &amp;&amp; make install</p>
-<p><img src="/images/shentouhuanjing13.png"></p>
-<p><img src="/images/shentouhuanjing14.png"></p>
-<p>ln -s /usr/local/python3/bin/python3 /usr/bin/python3</p>
-<p>yum –y install python3-pip</p>
-<p>将/usr/local/python3/bin加入PATH：</p>
-<p>vim /etc/profile</p>
-<p>PATH=$PATH:/usr/local/python3/bin</p>
-<hr>
-<h2 id="18-渗透测试基本流程"><a href="#18-渗透测试基本流程" class="headerlink" title="18.渗透测试基本流程"></a>18.渗透测试基本流程</h2><p>\1. 确定目标</p>
-<p>\2. 信息收集</p>
-<p>\3. 漏洞探测（手动&amp;自动）</p>
-<p>\4. 漏洞分析</p>
-<p>\5. 漏洞利用（手动&amp;自动）</p>
-<p>\6. 信息整理</p>
-<p>\7. 形成报告</p>
-<hr>
-]]></content>
-      <categories>
-        <category>渗透环境</category>
-      </categories>
-      <tags>
-        <tag>渗透</tag>
-        <tag>环境</tag>
-        <tag>准备</tag>
-      </tags>
   </entry>
   <entry>
     <title>前期信息收集</title>
