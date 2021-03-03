@@ -204,20 +204,6 @@
       </categories>
   </entry>
   <entry>
-    <title>博客主题更改</title>
-    <url>/2021/01/31/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9/</url>
-    <content><![CDATA[<h1 id="博客主题安装"><a href="#博客主题安装" class="headerlink" title="博客主题安装"></a>博客主题安装</h1><p>博客主题安装可以参考我安装的主题，具体安装步骤均在链接中，作者有写</p>
-<p><a href="https://github.com/Fechin/hexo-theme-diaspora">https://github.com/Fechin/hexo-theme-diaspora</a></p>
-<hr>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>链接</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo博客搭建</title>
     <url>/2021/01/28/hexo%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h2 id="1-安装node-js和npm"><a href="#1-安装node-js和npm" class="headerlink" title="1.安装node.js和npm"></a>1.安装node.js和npm</h2><p>前往nodejs.cn/download或nodejs.org/download下载</p>
@@ -463,7 +449,7 @@
 <p>update-rc.d ssh enable</p>
 <p>终端连接</p>
 <p>ifconfig</p>
-<p>ssh <a href="mailto:&#114;&#x6f;&#111;&#116;&#x40;&#49;&#57;&#x32;&#x2e;&#x31;&#x36;&#56;&#46;&#49;&#x32;&#x33;&#x2e;&#x31;&#51;&#54;">&#114;&#x6f;&#111;&#116;&#x40;&#49;&#57;&#x32;&#x2e;&#x31;&#x36;&#56;&#46;&#49;&#x32;&#x33;&#x2e;&#x31;&#51;&#54;</a></p>
+<p>ssh <a href="mailto:&#x72;&#111;&#111;&#116;&#x40;&#49;&#57;&#x32;&#x2e;&#49;&#x36;&#56;&#x2e;&#49;&#x32;&#51;&#x2e;&#49;&#51;&#x36;">&#x72;&#111;&#111;&#116;&#x40;&#49;&#57;&#x32;&#x2e;&#49;&#x36;&#56;&#x2e;&#49;&#x32;&#51;&#x2e;&#49;&#51;&#x36;</a></p>
 <p><img src="/images/shentouhuanjing6.png"></p>
 <hr>
 <h2 id="14-Kali-Tools"><a href="#14-Kali-Tools" class="headerlink" title="14.Kali Tools"></a>14.Kali Tools</h2><p>\1. 信息收集</p>
@@ -555,6 +541,20 @@
       </tags>
   </entry>
   <entry>
+    <title>博客主题更改</title>
+    <url>/2021/01/31/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9/</url>
+    <content><![CDATA[<h1 id="博客主题安装"><a href="#博客主题安装" class="headerlink" title="博客主题安装"></a>博客主题安装</h1><p>博客主题安装可以参考我安装的主题，具体安装步骤均在链接中，作者有写</p>
+<p><a href="https://github.com/Fechin/hexo-theme-diaspora">https://github.com/Fechin/hexo-theme-diaspora</a></p>
+<hr>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>链接</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>记一次笔记本电脑维护</title>
     <url>/2021/03/03/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91%E7%BB%B4%E6%8A%A4/</url>
     <content><![CDATA[<h1 id="记一次笔记本电脑维护"><a href="#记一次笔记本电脑维护" class="headerlink" title="记一次笔记本电脑维护"></a>记一次笔记本电脑维护</h1><hr>
@@ -564,7 +564,7 @@
 <p>输入</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">bcdboot c:\windows &#x2F;l zh-cn</span><br></pre></td></tr></table></figure>
 <p>回车确定后重启电脑</p>
-<p><img src="/images/bjbdnwh%E3%80%82jpg"></p>
+<p><img src="/images/bjbdnwh.jpg"></p>
 <p>根据界面上的提示，按F1进入到之前的命令行界面，使用del命令删除问题文件后重新启动即可开机。</p>
 <hr>
 ]]></content>
